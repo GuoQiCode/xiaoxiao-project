@@ -29,7 +29,7 @@ public class XiaoxiaoBkogsUsersController
     private XiaoxiaoUsersService xiaoxiaoUsersService;
 
 
-    @PostMapping(value = "")
+    @PostMapping(value = "/insert_xiaoxiao_users")
     @ApiOperation(value = "用户注册",httpMethod = "post",response = Result.class,notes = "用户注册")
     public Result insertXiaoxiaoUsers(XiaoxiaoUsers users) throws Exception
     {
