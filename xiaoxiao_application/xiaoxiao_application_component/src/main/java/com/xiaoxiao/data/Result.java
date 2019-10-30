@@ -27,6 +27,18 @@ public class Result
     private Object data;
 
 
+    /**
+     * 失败
+     * @param msg 消息
+     * @param succeed 成功
+     * @return
+     */
+    public static Result failed(String msg, boolean succeed)
+    {
+        return new Result(msg,succeed);
+    }
+
+
     public String getMsg()
     {
         return msg;
@@ -66,6 +78,16 @@ public class Result
      */
     public static Result succeed(String msg,Object data){
         return new Result(msg,data);
+    }
+
+    /**
+     * 成功
+     * @param msg
+     * @param succeed
+     * @return
+     */
+    public static Result succeed(String msg,boolean succeed){
+        return new Result(msg,succeed);
     }
 
     @Override

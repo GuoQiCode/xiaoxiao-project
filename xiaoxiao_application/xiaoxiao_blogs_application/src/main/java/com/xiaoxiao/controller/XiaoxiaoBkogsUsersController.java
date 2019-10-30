@@ -1,9 +1,15 @@
 package com.xiaoxiao.controller;
 
+import com.sun.xml.internal.fastinfoset.stax.events.EventBase;
+import com.xiaoxiao.data.Result;
+import com.xiaoxiao.pojo.XiaoxiaoUsers;
+import com.xiaoxiao.service.XiaoxiaoUsersService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import javafx.scene.chart.ValueAxis;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,11 +25,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class XiaoxiaoBkogsUsersController
 {
 
+    @Autowired
+    private XiaoxiaoUsersService xiaoxiaoUsersService;
 
-    @GetMapping(value = "/test")
-    @ApiOperation(value = "测试接口",httpMethod = "get")
-    public String test()
+
+    @PostMapping(value = "")
+    @ApiOperation(value = "用户注册",httpMethod = "post",response = Result.class,notes = "用户注册")
+    public Result insertXiaoxiaoUsers(XiaoxiaoUsers users) throws Exception
     {
-        return "test";
+        return this.xiaoxiaoUsersService.insertXiaoxiaoUsers(users);
     }
 }

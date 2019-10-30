@@ -16,9 +16,12 @@
         <jjwt-version>0.7.0</jjwt-version>
         <swagger-annotations-version>2.0.10</swagger-annotations-version>
         <swagger-jaxrs-version>1.5.24</swagger-jaxrs-version>
+        <mybatis-spring-boot-starter-version>2.0.0</mybatis-spring-boot-starter-version>
+        <xiaoxiao_application_component-version>1.0-SNAPSHOT</xiaoxiao_application_component-version>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <!--            -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
@@ -36,6 +39,13 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            <!--mybatis 启动器-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-spring-boot-starter-version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -67,17 +77,23 @@
                 <artifactId>jjwt</artifactId>
                 <version>${jjwt-version}</version>
             </dependency>
-<!--            swagger api-->
+            <!--            swagger api-->
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
                 <artifactId>swagger-annotations</artifactId>
                 <version>${swagger-annotations-version}</version>
             </dependency>
-<!--            swagger 接口注解API-->
+            <!--            swagger 接口注解API-->
             <dependency>
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-jaxrs</artifactId>
                 <version>${swagger-jaxrs-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.xiaoxiao</groupId>
+                <artifactId>xiaoxiao_application_component</artifactId>
+                <version>${xiaoxiao_application_component-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

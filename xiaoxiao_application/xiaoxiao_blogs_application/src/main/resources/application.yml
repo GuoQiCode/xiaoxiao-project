@@ -3,3 +3,15 @@ server:
 spring:
   application:
     name: xiaoxiao-blogs-application
+
+  datasource:
+    username: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    password: 159302
+    url:
+
+
+
+
+#常用语
+msg: 操作成功

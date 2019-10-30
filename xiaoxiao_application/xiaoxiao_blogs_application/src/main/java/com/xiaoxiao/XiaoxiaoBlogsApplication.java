@@ -1,5 +1,6 @@
 package com.xiaoxiao;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Describe:
  */
 @SpringBootApplication
+@MapperScan(value = "com.xiaoxiao.mapper")
 public class XiaoxiaoBlogsApplication
 {
     public static void main(String[] args)
