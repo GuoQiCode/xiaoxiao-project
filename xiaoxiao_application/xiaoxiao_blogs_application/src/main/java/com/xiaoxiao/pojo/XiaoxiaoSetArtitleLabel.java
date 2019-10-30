@@ -10,11 +10,11 @@ public class XiaoxiaoSetArtitleLabel implements Serializable
 {
 
     /**
-     *
+     *文章ID
      */
     private Long articleId;
     /**
-     *
+     *标签ID
      */
     private Long labelId;
 }
