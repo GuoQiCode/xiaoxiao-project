@@ -18,6 +18,7 @@
         <swagger-jaxrs-version>1.5.24</swagger-jaxrs-version>
         <mybatis-spring-boot-starter-version>2.0.0</mybatis-spring-boot-starter-version>
         <xiaoxiao_application_component-version>1.0-SNAPSHOT</xiaoxiao_application_component-version>
+        <swagger-version>2.9.2</swagger-version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -89,11 +90,22 @@
                 <artifactId>swagger-jaxrs</artifactId>
                 <version>${swagger-jaxrs-version}</version>
             </dependency>
-
+            <!--组件-->
             <dependency>
                 <groupId>com.xiaoxiao</groupId>
                 <artifactId>xiaoxiao_application_component</artifactId>
                 <version>${xiaoxiao_application_component-version}</version>
+            </dependency>
+            <!--        swagger api-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
