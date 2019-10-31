@@ -13,8 +13,8 @@ public interface XiaoxiaoUsersService
 {
     /**
      * 用户注册
-     * @param users
+     * @param users 用户对象
      * @return
      */
-    public Result insertXiaoxiaoUsers(XiaoxiaoUsers users) throws Exception;
+     Result insertXiaoxiaoUsers(XiaoxiaoUsers users) throws Exception;
 }

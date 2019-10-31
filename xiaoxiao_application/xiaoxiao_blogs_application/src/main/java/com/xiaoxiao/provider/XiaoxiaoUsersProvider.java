@@ -12,6 +12,10 @@ import org.apache.ibatis.jdbc.SQL;
 public class XiaoxiaoUsersProvider
 {
 
+
+
+
+
     /**
      * 用户插入数据
      * @param users  用户对象

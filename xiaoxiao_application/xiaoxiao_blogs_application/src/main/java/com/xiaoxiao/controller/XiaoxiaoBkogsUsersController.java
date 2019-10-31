@@ -24,7 +24,6 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(value = "博客用户控制层")
 public class XiaoxiaoBkogsUsersController
 {
-
     @Autowired
     private XiaoxiaoUsersService xiaoxiaoUsersService;
 

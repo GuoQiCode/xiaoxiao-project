@@ -20,7 +20,7 @@ import java.awt.font.TextHitInfo;
 public class XiaoxiaoUsersServiceImpl implements XiaoxiaoUsersService
 {
 
-    @Value("${msg}")
+    @Value("${OPERATION_SUCCEEDS}")
     private String msg;
 
     @Autowired

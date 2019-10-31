@@ -10,8 +10,3 @@ spring:
     password: 159302
     url:
 
-
-
-
-#常用语
-msg: 操作成功

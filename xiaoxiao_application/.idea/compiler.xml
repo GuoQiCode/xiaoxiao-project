@@ -10,11 +10,15 @@
         <module name="xiaoxiao_application_component" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xiaoxiao_swagger" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="xiaoxiao_blogs_application" options="" />
       <module name="xiaoxiao_dependent" options="" />
+      <module name="xiaoxiao_swagger" options="-parameters" />
     </option>
   </component>
 </project>

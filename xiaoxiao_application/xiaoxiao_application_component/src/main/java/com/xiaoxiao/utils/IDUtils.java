@@ -8,4 +8,14 @@ package com.xiaoxiao.utils;
  */
 public class IDUtils
 {
+    /**
+     * 获取ID
+     * @return
+     */
+    public static long getID(){
+        long timeMillis = System.currentTimeMillis();
+        String s = Double.toString(Math.random()).toString().substring(13);
+        long id = Long.parseLong(s + timeMillis);
+        return id;
+    }
 }
