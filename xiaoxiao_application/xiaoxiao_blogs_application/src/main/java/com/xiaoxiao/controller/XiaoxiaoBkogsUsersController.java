@@ -8,10 +8,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import javafx.scene.chart.ValueAxis;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @project_name:xiaoxiao_application
@@ -29,7 +26,7 @@ public class XiaoxiaoBkogsUsersController
 
 
     @PostMapping(value = "/insert_xiaoxiao_users")
-    @ApiOperation(value = "用户注册",httpMethod = "post",response = Result.class,notes = "用户注册")
+    @ApiOperation(value = "用户注册",httpMethod = "POST",response = Result.class,notes = "用户注册")
     public Result insertXiaoxiaoUsers(XiaoxiaoUsers users) throws Exception
     {
         return this.xiaoxiaoUsersService.insertXiaoxiaoUsers(users);

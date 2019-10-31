@@ -3,10 +3,12 @@ server:
 spring:
   application:
     name: xiaoxiao-blogs-application
-
+#配置数据源
   datasource:
-    username: root
+    sql-script-encoding: utf-8
     type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/xiaoxiao_borker?characterEncoding=UTF-8
     password: 159302
-    url:
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
 

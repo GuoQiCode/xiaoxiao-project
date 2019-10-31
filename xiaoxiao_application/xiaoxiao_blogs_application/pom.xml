@@ -57,7 +57,7 @@
             <groupId>com.xiaoxiao</groupId>
             <artifactId>xiaoxiao_application_component</artifactId>
         </dependency>
-
+        <!--swagger API-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
@@ -65,6 +65,12 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+<!--        事务包-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring-version}</version>
         </dependency>
     </dependencies>
 </project>
