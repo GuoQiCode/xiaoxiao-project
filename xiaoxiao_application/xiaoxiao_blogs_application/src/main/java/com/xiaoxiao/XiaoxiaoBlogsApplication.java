@@ -10,7 +10,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @project_name:xiaoxiao_application
  * @date:2019/10/30:16:35
  * @author:shinelon
- * @Describe:
+ * @Describe:博客启动器
  */
 @SpringBootApplication
 @MapperScan(value = "com.xiaoxiao.mapper")
